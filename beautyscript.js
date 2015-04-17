@@ -94,7 +94,7 @@ function addToCart(id) {
 
 function showCart() {
   thecart.innerHTML = '';
-  if (localStorage.names.length > 0) {
+  if (localStorage.names !== 'undefined') {
     var names = localStorage.names.toString().split(',');
     var prices = localStorage.prices.toString().split(',');
     var quantities = localStorage.quantities.toString().split(',');

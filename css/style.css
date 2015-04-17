@@ -20,8 +20,13 @@ width: 300px;
 
 div {
 	border-radius: 5px;
+
 }
 
+div img{
+	border: 2px;
+	margin: 1px;
+}
 #header {
 	z-index: 1;
 	position: fixed;
@@ -64,6 +69,7 @@ td:hover{
 	margin-right: 400px;
 	border: 3px black solid;
 	overflow: scroll;
+	padding-left: 15px
 }
 
  #order {
