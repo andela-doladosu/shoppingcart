@@ -4,7 +4,7 @@ var imageIndex=0;
 var thecart = document.querySelectorAll("#cart ul")[0];
 var total = 0;
 
-alert(localstorage.names);
+console.log(localstorage.names);
 
 function changeImage(){
   myPhoto.setAttribute("src", imageArray[imageIndex]);
