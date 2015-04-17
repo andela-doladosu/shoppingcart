@@ -73,9 +73,9 @@ function onClear(event) {
 
 function addToCart(id) {
   var item = document.getElementById(id);  
-  var the_names = localStorage.names.toString().split(',');
-  var the_prices = localStorage.prices.toString().split(',');
-  var the_quantities = localStorage.quantities.toString().split(',');
+  var the_names = (localStorage.names !== 'undefined') ? localStorage.names.toString().split(',') : [];
+  var the_prices = (localStorage.prices !== 'undefined') ? localStorage.prices.toString().split(',') : [];
+  var the_quantities = (localStorage.quantities !== 'undefined') ? localStorage.quantities.toString().split(',') : [];
   var quantity = 1;
   var price = item.getAttribute("data-price");
   var product_name = item.getAttribute("data-name");
@@ -85,7 +85,7 @@ function addToCart(id) {
     localStorage.quantities = the_quantities;
   } 
   else {
-    
+
     localStorage.names += ',' + product_name;
     localStorage.prices +=  ',' + price;
     localStorage.quantities += ',' + quantity;
