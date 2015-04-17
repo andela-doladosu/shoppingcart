@@ -85,6 +85,7 @@ function addToCart(id) {
     localStorage.quantities = the_quantities;
   } 
   else {
+    
     localStorage.names += ',' + product_name;
     localStorage.prices +=  ',' + price;
     localStorage.quantities += ',' + quantity;
